@@ -11,11 +11,11 @@
   <form id="bloodPressureForm">
     <div id="formGroup">
       <label for="systolic" onclick="highlightField('systolic')">Systolic:</label>
-        <input type="text" id="systolic" onfocus="selectAllText"><br>
+        <input type="text" id="systolic" onfocus="selectAllText(this)"><br>
     </div>
     <div id="formGroup">
       <label for="diastolic" onclick="highlightField('diastolic')">Diastolic:</label>
-        <input type="text" id="diastolic" onfocus="selectAllText"><br>
+        <input type="text" id="diastolic" onfocus="selectAllText(this)"><br>
     </div>
         <button type="button" onclick="calculateBloodPressure()">Check</button>
   </form>
