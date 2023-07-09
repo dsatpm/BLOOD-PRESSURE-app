@@ -86,3 +86,7 @@ function calculateBloodPressure() {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
   });
+
+function selectAllText(input) {
+    input.select();
+}
