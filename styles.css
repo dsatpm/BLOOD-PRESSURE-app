@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'h1';
+    src: url('fonts/MarcellusSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'button';
+    src: url('fonts/OpenSans-VariableFont.ttf') format('truetype');
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .form-group input[type='text'] {
+        width: 100%;
+    }
+
+    .container > div {
+        flex-basis: 100%;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d1caca;
+}
+
+h1 { 
+    font-size: 3.5rem;
+    font-family: 'h1', sans-serif;
+    color: #060000;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    flex: 1 1 300px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: 'button', sans-serif;
+    font-size: medium; 
+    margin-top: 15px;
+    padding: 8px 14px;
+    background-color: #3fbb50;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #26ae34;
+}
+
+.logo-link img {
+    width: 100px;
+    height: 100px;
+    transition: tranform 0.3s ease cubic-bezier(0.45, 0.5, 0.55, 0.6);
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.logo-link:hover img {
+    transform: scale(1.13);
+}
+
+.logo-link {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: relative;
+}
+
+.logo-link.fade-in {
+    opacity: 1;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}

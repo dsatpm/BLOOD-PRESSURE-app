@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Blood Pressure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Blood Pressure Calculator</h1>
+  <form id="bloodPressureForm">
+    <div id="formGroup">
+      <label for="systolic">Systolic:</label>
+        <input type="text" id="systolic" /><br />
+    </div>
+    <div id="formGroup">
+      <label for="diastolic">Diastolic:</label>
+        <input type="text" id="diastolic" /><br />
+    </div>
+        <button type="button" onclick="calculateBloodPressure()">Check</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
